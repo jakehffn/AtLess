@@ -110,7 +110,7 @@ Check the example to get a better idea about how this tool can be used.
 
 ### Command line
 
-```bash
+```console
 AtLess [-h] [I] [O]
 
 Texture Atlas generator for use with Aseprite
