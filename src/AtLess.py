@@ -49,14 +49,20 @@ class SpriteSheet:
 
 class Atlas:
 
-    def __init__(self, inputDir): 
+    def __init__(self, inputDir, exportDir=None): 
 
         self._inputDirectory = inputDir
         self._PNGData = None
         self._JSONData = None
         self._spriteSheets = []
 
-        self.initSpriteSheets()
+        if exportDir:
+
+            self.exportInputs(exportDir)
+            self.initSpriteSheets(exportDir)
+        
+        else: 
+            self.initSpriteSheets(inputDir)
 
         self._dimensions = rpack.bbox_size([ss.dimensions for ss in self._spriteSheets], [ss.position for ss in self._spriteSheets])
 
@@ -70,16 +76,33 @@ class Atlas:
 
         return dest
 
-    def initSpriteSheets(self):
+    def exportInputs(self, exportDir):
 
+        print(exportDir)
         for filename in os.listdir(self._inputDirectory):
 
-            baseFileName = filename.split('.')[0]
-            extension = filename.split('.')[-1]
+            (baseFilename, extension) = os.path.splitext(filename)
+
+            if extension == ".aseprite":
+
+                jsonPath = os.path.join(exportDir, f'{baseFilename}.json')
+                pngPath = os.path.join(exportDir, f'{baseFilename}.png')
+                file = os.path.join(self._inputDirectory, filename)
+
+                command = f'aseprite --batch --data "{jsonPath}" --format json-array --sheet "{pngPath}" --sheet-type packed --split-layers --split-tags --all-layers --filename-format "{{title}}_{{tag}}_{{layer}}_{{frame}}" --trim {file}'
+
+                print(command)
+                os.system(command)
+
+    def initSpriteSheets(self, spriteSheetDir):
+
+        for filename in os.listdir(spriteSheetDir):
+
+            (baseFilename, extension) = os.path.splitext(filename)
             
-            if extension == "png":
+            if extension == ".png":
                 
-                self._spriteSheets.append(SpriteSheet(f'{self._inputDirectory}/{baseFileName}'))
+                self._spriteSheets.append(SpriteSheet(f'{spriteSheetDir}/{baseFilename}'))
 
         rectangles = [spriteSheet.dimensions for spriteSheet in self._spriteSheets]
         positions = rpack.pack(rectangles)
@@ -241,14 +264,19 @@ if __name__ == "__main__":
 
     args = createParser().parse_args()
 
-    atlas = Atlas(args.input)
 
-    os.makedirs(args.output, exist_ok = True)
 
     if (args.output[-1] == '\\' or args.output == '/'):
         args.output = args.output[:-1]
 
     (outputHead, outputBase) = os.path.split(args.output)
+
+    exportDir = os.path.join(outputHead, outputBase, 'exports')
+
+    os.makedirs(args.output, exist_ok = True)
+    os.makedirs(exportDir, exist_ok = True)
+
+    atlas = Atlas(args.input, exportDir=exportDir)
 
     atlas.toPNG(os.path.join(outputHead, outputBase, f'{outputBase}.png'))
     atlas.toJSON(os.path.join(outputHead, outputBase, f'{outputBase}.json'))

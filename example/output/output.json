@@ -1,0 +1,530 @@
+{
+    "meta": {
+        "size": {
+            "w": 205,
+            "h": 64
+        }
+    },
+    "spritesheets": [
+        {
+            "name": "Sprite1",
+            "size": {
+                "w": 80,
+                "h": 64
+            },
+            "spriteSize": {
+                "w": 16,
+                "h": 16
+            },
+            "position": {
+                "x": 125,
+                "y": 0
+            },
+            "animations": [
+                {
+                    "name": "animation1",
+                    "direction": "right",
+                    "numFrames": 3,
+                    "frames": [
+                        {
+                            "frameNumber": "0",
+                            "duration": 100,
+                            "size": {
+                                "w": 16,
+                                "h": 16
+                            },
+                            "position": {
+                                "x": 125,
+                                "y": 0
+                            },
+                            "offset": {
+                                "x": 0,
+                                "y": 0
+                            }
+                        },
+                        {
+                            "frameNumber": "1",
+                            "duration": 100,
+                            "size": {
+                                "w": 16,
+                                "h": 16
+                            },
+                            "position": {
+                                "x": 141,
+                                "y": 0
+                            },
+                            "offset": {
+                                "x": 0,
+                                "y": 0
+                            }
+                        },
+                        {
+                            "frameNumber": "2",
+                            "duration": 100,
+                            "size": {
+                                "w": 16,
+                                "h": 16
+                            },
+                            "position": {
+                                "x": 157,
+                                "y": 0
+                            },
+                            "offset": {
+                                "x": 0,
+                                "y": 0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "animation1",
+                    "direction": "left",
+                    "numFrames": 3,
+                    "frames": [
+                        {
+                            "frameNumber": "0",
+                            "duration": 100,
+                            "size": {
+                                "w": 16,
+                                "h": 16
+                            },
+                            "position": {
+                                "x": 173,
+                                "y": 0
+                            },
+                            "offset": {
+                                "x": 0,
+                                "y": 0
+                            }
+                        },
+                        {
+                            "frameNumber": "1",
+                            "duration": 100,
+                            "size": {
+                                "w": 16,
+                                "h": 16
+                            },
+                            "position": {
+                                "x": 189,
+                                "y": 0
+                            },
+                            "offset": {
+                                "x": 0,
+                                "y": 0
+                            }
+                        },
+                        {
+                            "frameNumber": "2",
+                            "duration": 100,
+                            "size": {
+                                "w": 16,
+                                "h": 16
+                            },
+                            "position": {
+                                "x": 125,
+                                "y": 16
+                            },
+                            "offset": {
+                                "x": 0,
+                                "y": 0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "animation1",
+                    "direction": "down",
+                    "numFrames": 3,
+                    "frames": [
+                        {
+                            "frameNumber": "0",
+                            "duration": 100,
+                            "size": {
+                                "w": 16,
+                                "h": 16
+                            },
+                            "position": {
+                                "x": 141,
+                                "y": 16
+                            },
+                            "offset": {
+                                "x": 0,
+                                "y": 0
+                            }
+                        },
+                        {
+                            "frameNumber": "1",
+                            "duration": 100,
+                            "size": {
+                                "w": 16,
+                                "h": 16
+                            },
+                            "position": {
+                                "x": 157,
+                                "y": 16
+                            },
+                            "offset": {
+                                "x": 0,
+                                "y": 0
+                            }
+                        },
+                        {
+                            "frameNumber": "2",
+                            "duration": 100,
+                            "size": {
+                                "w": 16,
+                                "h": 16
+                            },
+                            "position": {
+                                "x": 173,
+                                "y": 16
+                            },
+                            "offset": {
+                                "x": 0,
+                                "y": 0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "animation1",
+                    "direction": "up",
+                    "numFrames": 3,
+                    "frames": [
+                        {
+                            "frameNumber": "0",
+                            "duration": 100,
+                            "size": {
+                                "w": 16,
+                                "h": 16
+                            },
+                            "position": {
+                                "x": 189,
+                                "y": 16
+                            },
+                            "offset": {
+                                "x": 0,
+                                "y": 0
+                            }
+                        },
+                        {
+                            "frameNumber": "1",
+                            "duration": 100,
+                            "size": {
+                                "w": 16,
+                                "h": 16
+                            },
+                            "position": {
+                                "x": 125,
+                                "y": 32
+                            },
+                            "offset": {
+                                "x": 0,
+                                "y": 0
+                            }
+                        },
+                        {
+                            "frameNumber": "2",
+                            "duration": 100,
+                            "size": {
+                                "w": 16,
+                                "h": 16
+                            },
+                            "position": {
+                                "x": 141,
+                                "y": 32
+                            },
+                            "offset": {
+                                "x": 0,
+                                "y": 0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "animation2",
+                    "direction": "right",
+                    "numFrames": 2,
+                    "frames": [
+                        {
+                            "frameNumber": "0",
+                            "duration": 100,
+                            "size": {
+                                "w": 16,
+                                "h": 16
+                            },
+                            "position": {
+                                "x": 157,
+                                "y": 32
+                            },
+                            "offset": {
+                                "x": 0,
+                                "y": 0
+                            }
+                        },
+                        {
+                            "frameNumber": "1",
+                            "duration": 100,
+                            "size": {
+                                "w": 16,
+                                "h": 16
+                            },
+                            "position": {
+                                "x": 173,
+                                "y": 32
+                            },
+                            "offset": {
+                                "x": 0,
+                                "y": 0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "animation2",
+                    "direction": "left",
+                    "numFrames": 2,
+                    "frames": [
+                        {
+                            "frameNumber": "0",
+                            "duration": 100,
+                            "size": {
+                                "w": 16,
+                                "h": 16
+                            },
+                            "position": {
+                                "x": 189,
+                                "y": 32
+                            },
+                            "offset": {
+                                "x": 0,
+                                "y": 0
+                            }
+                        },
+                        {
+                            "frameNumber": "1",
+                            "duration": 100,
+                            "size": {
+                                "w": 16,
+                                "h": 16
+                            },
+                            "position": {
+                                "x": 125,
+                                "y": 48
+                            },
+                            "offset": {
+                                "x": 0,
+                                "y": 0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "animation2",
+                    "direction": "down",
+                    "numFrames": 2,
+                    "frames": [
+                        {
+                            "frameNumber": "0",
+                            "duration": 100,
+                            "size": {
+                                "w": 16,
+                                "h": 16
+                            },
+                            "position": {
+                                "x": 141,
+                                "y": 48
+                            },
+                            "offset": {
+                                "x": 0,
+                                "y": 0
+                            }
+                        },
+                        {
+                            "frameNumber": "1",
+                            "duration": 100,
+                            "size": {
+                                "w": 16,
+                                "h": 16
+                            },
+                            "position": {
+                                "x": 157,
+                                "y": 48
+                            },
+                            "offset": {
+                                "x": 0,
+                                "y": 0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "animation2",
+                    "direction": "up",
+                    "numFrames": 2,
+                    "frames": [
+                        {
+                            "frameNumber": "0",
+                            "duration": 100,
+                            "size": {
+                                "w": 16,
+                                "h": 16
+                            },
+                            "position": {
+                                "x": 173,
+                                "y": 48
+                            },
+                            "offset": {
+                                "x": 0,
+                                "y": 0
+                            }
+                        },
+                        {
+                            "frameNumber": "1",
+                            "duration": 100,
+                            "size": {
+                                "w": 16,
+                                "h": 16
+                            },
+                            "position": {
+                                "x": 189,
+                                "y": 48
+                            },
+                            "offset": {
+                                "x": 0,
+                                "y": 0
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Sprite2",
+            "size": {
+                "w": 125,
+                "h": 64
+            },
+            "spriteSize": {
+                "w": 64,
+                "h": 32
+            },
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "animations": [
+                {
+                    "name": "default",
+                    "direction": "down",
+                    "numFrames": 3,
+                    "frames": [
+                        {
+                            "frameNumber": "0",
+                            "duration": 100,
+                            "size": {
+                                "w": 64,
+                                "h": 32
+                            },
+                            "position": {
+                                "x": 0,
+                                "y": 0
+                            },
+                            "offset": {
+                                "x": 0,
+                                "y": 0
+                            }
+                        },
+                        {
+                            "frameNumber": "1",
+                            "duration": 100,
+                            "size": {
+                                "w": 64,
+                                "h": 32
+                            },
+                            "position": {
+                                "x": 0,
+                                "y": 0
+                            },
+                            "offset": {
+                                "x": 0,
+                                "y": 0
+                            }
+                        },
+                        {
+                            "frameNumber": "2",
+                            "duration": 100,
+                            "size": {
+                                "w": 61,
+                                "h": 32
+                            },
+                            "position": {
+                                "x": 64,
+                                "y": 0
+                            },
+                            "offset": {
+                                "x": 3,
+                                "y": 0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "default",
+                    "direction": "up",
+                    "numFrames": 3,
+                    "frames": [
+                        {
+                            "frameNumber": "0",
+                            "duration": 100,
+                            "size": {
+                                "w": 64,
+                                "h": 32
+                            },
+                            "position": {
+                                "x": 0,
+                                "y": 0
+                            },
+                            "offset": {
+                                "x": 0,
+                                "y": 0
+                            }
+                        },
+                        {
+                            "frameNumber": "1",
+                            "duration": 100,
+                            "size": {
+                                "w": 64,
+                                "h": 32
+                            },
+                            "position": {
+                                "x": 0,
+                                "y": 0
+                            },
+                            "offset": {
+                                "x": 0,
+                                "y": 0
+                            }
+                        },
+                        {
+                            "frameNumber": "2",
+                            "duration": 100,
+                            "size": {
+                                "w": 61,
+                                "h": 32
+                            },
+                            "position": {
+                                "x": 0,
+                                "y": 32
+                            },
+                            "offset": {
+                                "x": 0,
+                                "y": 0
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

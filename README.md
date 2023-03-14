@@ -6,8 +6,6 @@ Using tilesheets from individual sprites, along with the generated JSON from Ase
 
 Also generated with the atlas is a folder of the primary sprites for use in Tiled (or another map editor), with the base sprite name as the name of the image.
 
-Expects aseprite filename formatted as: ```{title}_{tag}_{layer}_{frame}```
-
 Output JSON:
 
 ```json
@@ -103,6 +101,14 @@ Output JSON:
 ```
 
 ## Usage
+
+In order to use this tool, make sure that Aseprite.exe is in your `Path` environment variable.
+
+### Example
+
+Check the example to get a better idea about how this tool can be used.
+
+### Command line
 
 ```bash
 Sprite Atlas Tool [-h] [I] [O]
