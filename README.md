@@ -111,9 +111,9 @@ Check the example to get a better idea about how this tool can be used.
 ### Command line
 
 ```bash
-Sprite Atlas Tool [-h] [I] [O]
+AtLess [-h] [I] [O]
 
-Sprite Atlas Creator
+Texture Atlas generator for use with Aseprite
 
 positional arguments:
   I           Input folder

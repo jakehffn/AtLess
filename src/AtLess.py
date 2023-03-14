@@ -251,8 +251,8 @@ class Atlas:
 def createParser() -> argparse.ArgumentParser:
 
     parser = argparse.ArgumentParser(
-        prog='Sprite Atlas Tool', 
-        description=('Sprite Atlas Creator'),
+        prog='AtLess', 
+        description='Texture Atlas generator for use with Aseprite',
         epilog='\n')
 
     parser.add_argument('input', metavar='I', nargs='?', type=str, help='Input folder')
@@ -263,8 +263,6 @@ def createParser() -> argparse.ArgumentParser:
 if __name__ == "__main__":
 
     args = createParser().parse_args()
-
-
 
     if (args.output[-1] == '\\' or args.output == '/'):
         args.output = args.output[:-1]
